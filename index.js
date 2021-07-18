@@ -22,7 +22,7 @@ app.listen(port, () => {
   console.log(`server is running on port = ${port}`);
 });
 
-app.get("/", () => {
+app.get("/", (req, res) => {
   console.log("hello");
-  res.send(hello);
+  res.send("hello");
 });
