@@ -24,4 +24,5 @@ app.listen(port, () => {
 
 app.get("/", () => {
   console.log("hello");
+  res.send(hello);
 });
